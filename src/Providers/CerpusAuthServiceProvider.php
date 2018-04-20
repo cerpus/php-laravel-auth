@@ -10,11 +10,13 @@ class CerpusAuthServiceProvider extends ServiceProvider {
         if (!$this->app->routesAreCached()) {
             require __DIR__.'/../routes.php';
         }
+    }
+
+    public function register() {
+        $this->mergeConfigFrom(__DIR__.'/../Config/cerpusauth.php', 'cerpusauth');
 
         $this->app->bind(CerpusAuthService::class, function ($app) {
             return new CerpusAuthService();
         });
-
-        $this->mergeConfigFrom(__DIR__.'/../Config/cerpusauth.php', 'cerpusauth');
     }
 }
