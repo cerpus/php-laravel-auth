@@ -10,6 +10,7 @@
     "require": {
         "php": ">=7",
         "illuminate/support": "~5.2",
+        "illuminate/routing": "~5.2",
         "cerpus/cerpusauthlib-core": "0.0.17"
     },
     "require-dev": {
