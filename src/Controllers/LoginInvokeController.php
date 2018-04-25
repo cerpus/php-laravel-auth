@@ -5,9 +5,10 @@ namespace Cerpus\LaravelAuth\Controllers;
 
 use Cerpus\LaravelAuth\Service\CerpusAuthService;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\App;
 
-class LoginInvokeController {
+class LoginInvokeController extends Controller {
     public function getLoginData(Request $request) {
         $redirect = $request->get("redirect", null);
         $abort = $request->get("abort", null);
