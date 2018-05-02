@@ -83,4 +83,12 @@ class CerpusAuthService {
     public function getJwtService(): \Cerpus\AuthCore\JWTService {
         return new \Cerpus\AuthCore\JWTService($this->getConfig(), $this->getAuthCoreIntegration());
     }
+
+    public function getCssUrl() {
+        return url(config('cerpusauth.assetPath').'/'.config('cerpusauth.css'));
+    }
+
+    public function getJsUrl() {
+        return url(config('cerpusauth.assetPath').'/'.config('cerpusauth.js'));
+    }
 }
