@@ -6,5 +6,5 @@ return [
     'secret' => env('CERPUS_AUTH_SECRET', 'cerpusauth-default-key-changeme'),
     'assetPath' => 'vendor/cerpus/laravel-auth',
     'css' => 'css/main.5a40ff96.css',
-    'js' => 'js/main.acfe6fb3.js'
+    'js' => 'js/main.07c5945a.js'
 ];
