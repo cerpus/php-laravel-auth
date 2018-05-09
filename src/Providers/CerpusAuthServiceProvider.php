@@ -10,6 +10,10 @@ class CerpusAuthServiceProvider extends ServiceProvider {
         if (!$this->app->routesAreCached()) {
             require __DIR__.'/../routes.php';
         }
+
+        $this->publishes([
+            dirname(dirname(__DIR__)).'/assets' => public_path('vendor/cerpus/laravel-auth'),
+        ], 'public');
     }
 
     public function register() {
