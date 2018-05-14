@@ -5,6 +5,6 @@ return [
     'user'   => env('CERPUS_AUTH_USER', 'cerpusauth-default-user-changeme'),
     'secret' => env('CERPUS_AUTH_SECRET', 'cerpusauth-default-key-changeme'),
     'assetPath' => 'vendor/cerpus/laravel-auth',
-    'css' => 'css/main.5a40ff96.css',
-    'js' => 'js/main.41d501ba.js'
+    'css' => 'css/main.c89f3564.css',
+    'js' => 'js/main.eb563bb7.js'
 ];
