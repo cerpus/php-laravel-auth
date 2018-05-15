@@ -12,7 +12,7 @@ class CerpusAuthServiceProvider extends ServiceProvider {
         }
 
         $this->publishes([
-            dirname(dirname(__DIR__)).'/assets' => public_path('vendor/cerpus/laravel-auth'),
+            dirname(dirname(__DIR__)).'/assets' => public_path('resources/reactive-login/static'),
         ], 'public');
     }
 
