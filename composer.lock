@@ -9,17 +9,17 @@
     "packages": [
         {
             "name": "cerpus/cerpusauthlib-core",
-            "version": "0.0.18",
+            "version": "dev-CCC-2938-2",
             "source": {
                 "type": "git",
                 "url": "ssh://git@app-cerpus-stash.cerpus.net:7999/authnd/php-authlib-core.git",
-                "reference": "7727061cfd35a3381d7c02d8d276a3dbac174dba"
+                "reference": "d978fdc7f2f1f87a49c30be5ef93eaa3a255bdff"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://composer.cerpus.net/archives/download/87.tar.gz",
-                "reference": "7727061cfd35a3381d7c02d8d276a3dbac174dba",
-                "shasum": "423253459e20489bfb95573a90ada60cdc2fbadf"
+                "url": "https://composer.cerpus.net/archives/download/105.tar.gz",
+                "reference": "d978fdc7f2f1f87a49c30be5ef93eaa3a255bdff",
+                "shasum": "135dc36204a28080081157d48e37bee343bbd8a7"
             },
             "require": {
                 "guzzlehttp/guzzle": "^6.1"
@@ -49,7 +49,8 @@
                 "Cerpus JWT support library",
                 "laravel",
                 "lumen"
-            ]
+            ],
+            "time": "2018-05-15T08:15:03+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -2683,7 +2684,7 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
