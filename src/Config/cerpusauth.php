@@ -6,5 +6,5 @@ return [
     'secret' => env('CERPUS_AUTH_SECRET', 'cerpusauth-default-key-changeme'),
     'assetPath' => 'resources/reactive-login/static',
     'css' => 'css/main.b784a1ee.css',
-    'js' => 'js/main.5a334965.js'
+    'js' => 'js/main.6bf05011.js'
 ];
