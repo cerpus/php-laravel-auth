@@ -8,6 +8,7 @@ use Cerpus\AuthCore\AuthorizationCodeTokenRequest;
 use Cerpus\AuthCore\AuthorizeRequest;
 use Cerpus\AuthCore\AuthProfileService;
 use Cerpus\AuthCore\AuthServiceConfig;
+use Cerpus\AuthCore\CheckTokenRequest;
 use Cerpus\AuthCore\ClientCredentialsTokenRequest;
 use Cerpus\AuthCore\CreateUserApiService;
 use Cerpus\AuthCore\IdentityRequest;
@@ -54,6 +55,10 @@ class CerpusAuthService {
 
     public function getClientCredentialsTokenRequest(): ClientCredentialsTokenRequest {
         return new ClientCredentialsTokenRequest($this->getConfig());
+    }
+
+    public function getCheckTokenRequest(string $accessToken): CheckTokenRequest {
+        return new CheckTokenRequest($this->getConfig(), $accessToken);
     }
 
     public function getIdentityRequest(TokenResponse $accessToken): IdentityRequest {
