@@ -37,7 +37,7 @@ class JWTValidationService {
         }
     }
     public function validateJwt($jwt) {
-        $jwtContexts = config('cerpus-auth.jwt-contexts');
+        $jwtContexts = config('cerpusauth.jwt-contexts');
         $pubKeys = [];
         $config = [];
         foreach ($jwtContexts as $jwtContext) {

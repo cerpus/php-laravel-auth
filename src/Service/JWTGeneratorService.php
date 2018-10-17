@@ -7,7 +7,7 @@ use Cerpus\JWTSupport\JWTSigner;
 
 class JWTGeneratorService {
     public function signJwt($contextName, $payload) {
-        $jwtContexts = config('cerpus-auth.jwt-contexts');
+        $jwtContexts = config('cerpusauth.jwt-contexts');
         $privKeys = [];
         $config = [];
         foreach ($jwtContexts as $jwtContext) {
