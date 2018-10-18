@@ -16,6 +16,7 @@ return (function () {
         $keyPrefix = 'CERPUS_JWT_' . strtoupper($name);
         $keys = [
             'pubkey' => $keyPrefix . '_PUBKEY',
+            'privkey' => $keyPrefix . '_PRIVKEY',
             'type' => $keyPrefix . '_TYPE',
             'expiration-leeway-seconds' => $keyPrefix . '_EXPIRATION_LEEWAY_SECONDS'
         ];
