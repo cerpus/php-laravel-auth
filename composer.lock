@@ -52,17 +52,17 @@
         },
         {
             "name": "cerpus/jwtsupportlib",
-            "version": "0.3",
+            "version": "0.3.2",
             "source": {
                 "type": "git",
                 "url": "ssh://git@app-cerpus-stash.cerpus.net:7999/brain/php-jwtsupportlib.git",
-                "reference": "e30efff55ca088c91d3a107872972b5f2d417290"
+                "reference": "4d578c13bd6fcb5029f3918a6f0248625abe2bff"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://composer.cerpus.net/archives/download/160.tar.gz",
-                "reference": "e30efff55ca088c91d3a107872972b5f2d417290",
-                "shasum": "32ec3c61dd23e16be5a87d0e00e3bf4389cab14d"
+                "url": "https://composer.cerpus.net/archives/download/167.tar.gz",
+                "reference": "4d578c13bd6fcb5029f3918a6f0248625abe2bff",
+                "shasum": "692244529bba36af912bd70106908088868a4f67"
             },
             "require": {
                 "firebase/php-jwt": "^5.0",
