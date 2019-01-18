@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "cc7574405e1ea3f34b5b5cdf8a6291a4",
+    "content-hash": "01a4acdc1174873bbfcfb3a5809f7cab",
     "packages": [
         {
             "name": "cerpus/cerpusauthlib-core",
-            "version": "0.0.23",
+            "version": "0.0.24",
             "source": {
                 "type": "git",
                 "url": "ssh://git@app-cerpus-stash.cerpus.net:7999/authnd/php-authlib-core.git",
-                "reference": "a3dca1a89709d2d63ed4a30d36c82cf01666764a"
+                "reference": "8b5a7919c3d8b2c98f793090005e23993ee6ca52"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://composer.cerpus.net/archives/download/157.tar.gz",
-                "reference": "a3dca1a89709d2d63ed4a30d36c82cf01666764a",
-                "shasum": "1063e3abbb0a758f55d8059cdd44bef367b158c7"
+                "url": "https://composer.cerpus.net/archives/download/185.tar.gz",
+                "reference": "8b5a7919c3d8b2c98f793090005e23993ee6ca52",
+                "shasum": "b3d4536f758ab7bc93648362e7b6e2b1f5e86a90"
             },
             "require": {
                 "guzzlehttp/guzzle": "^6.1"
