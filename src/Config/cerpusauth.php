@@ -35,6 +35,6 @@ return (function () {
         'jwt-contexts' => $jwtContexts,
         'assetPath' => 'resources/reactive-login/static',
         'css' => 'css/main.91dd0cd1.css',
-        'js' => 'js/main.080488dc.js'
+        'js' => 'js/main.9b1d16d2.js'
     ];
 })();
