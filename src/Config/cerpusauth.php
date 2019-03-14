@@ -34,7 +34,7 @@ return (function () {
             'cerpusauth-default-key-changeme'),
         'jwt-contexts' => $jwtContexts,
         'assetPath' => 'resources/reactive-login/static',
-        'css' => 'css/main.103010b8.css',
-        'js' => 'js/main.a6283bca.js'
+        'css' => 'css/main.272d5315.css',
+        'js' => 'js/main.a15950be.js'
     ];
 })();
