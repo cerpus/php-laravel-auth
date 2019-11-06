@@ -15,6 +15,7 @@ use Cerpus\AuthCore\IdentityRequest;
 use Cerpus\AuthCore\Oauth2Flow;
 use Cerpus\AuthCore\TokenResponse;
 use Cerpus\AuthCore\AuthLocalesService;
+use Cerpus\LaravelAuth\AssetManifest;
 
 class CerpusAuthService {
     private $config = null;
@@ -89,11 +90,21 @@ class CerpusAuthService {
         return new \Cerpus\AuthCore\JWTService($this->getConfig(), $this->getAuthCoreIntegration());
     }
 
+    /**
+     * @deprecated Use the getLoginAssetManifest() instead. It'll have more recent css and js. It will return multiple instances of css and js that need to be added to the head.
+     */
     public function getCssUrl() {
         return url(config('cerpusauth.assetPath').'/'.config('cerpusauth.css'));
     }
 
+    /**
+     * @deprecated Use the getLoginAssetManifest() instead. It'll have more recent css and js. It will return multiple instances of css and js that need to be added to the head.
+     */
     public function getJsUrl() {
         return url(config('cerpusauth.assetPath').'/'.config('cerpusauth.js'));
+    }
+
+    public function getLoginAssetManifest(): AssetManifest {
+        return new AssetManifest(config('cerpusauth.assetManifest'), config('cerpusauth.assetManifestRootPath'), '/'.config('cerpusauth.assetPath').'/');
     }
 }

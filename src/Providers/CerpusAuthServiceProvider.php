@@ -12,7 +12,14 @@ class CerpusAuthServiceProvider extends ServiceProvider {
         }
 
         $this->publishes([
-            dirname(dirname(__DIR__)).'/assets' => public_path('resources/reactive-login/static'),
+            // deprecated - remove together with old css dir
+            dirname(dirname(__DIR__)).'/assets/css' => public_path('resources/reactive-login/static/css'),
+            // deprecated - remove together with old js dir
+            dirname(dirname(__DIR__)).'/assets/js' => public_path('resources/reactive-login/static/js'),
+            // deprecated - remove together with old media dir
+            dirname(dirname(__DIR__)).'/assets/media' => public_path('resources/reactive-login/static/media'),
+
+            dirname(dirname(__DIR__)).'/assets/static' => public_path('resources/reactive-login/static'),
         ], 'public');
     }
 

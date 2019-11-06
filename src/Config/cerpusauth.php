@@ -33,8 +33,10 @@ return (function () {
         'secret' => env('CERPUS_AUTH_SECRET',
             'cerpusauth-default-key-changeme'),
         'jwt-contexts' => $jwtContexts,
+        'assetManifest' => dirname(dirname(__DIR__)).'/assets/asset-manifest.json',
+        'assetManifestRootPath' => '/resources/reactive-login/static/',
         'assetPath' => 'resources/reactive-login/static',
-        'css' => 'css/main.ab9cf963.css',
-        'js' => 'js/main.6e787ab3.js'
+        'css' => 'css/main.a2d6fe11.css', // deprecated
+        'js' => 'js/main.f64c2c35.js' // deprecated
     ];
 })();
