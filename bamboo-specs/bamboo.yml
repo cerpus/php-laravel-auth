@@ -1,0 +1,32 @@
+---
+version: 2
+plan:
+  project-key: BCP
+  key: LARAU
+  name: Laravel Auth
+stages:
+  - Build:
+    - Create package
+
+Create package:
+  tasks:
+    - script: |
+        rm -rf code &&
+        mkdir -p code &&
+        (mv * .* code/ || true) &&
+
+        cd code &&
+        rm -rf .git &&
+        tar czvf ../laravelauth.tar.gz ./ &&
+        php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" &&
+        php composer-setup.php &&
+        php -r "unlink('composer-setup.php');" &&
+        php composer.phar install
+  artifacts:
+    - name: laravelauth.tar.gz
+      location: ./
+      pattern: laravelauth.tar.gz
+      required: true
+      shared: true
+  requirements:
+    - platform: ubuntu1804
