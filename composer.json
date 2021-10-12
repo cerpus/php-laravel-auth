@@ -2,6 +2,7 @@
     "name": "cerpus/laravel-auth",
     "description": "Authentication plugin for Laravel",
     "minimum-stability": "stable",
+    "license": "GPL-3.0-only",
     "authors": [
         {
             "name": "Jan-Espen Oversand",
@@ -27,15 +28,5 @@
         "psr-4": {
             "Cerpus\\LaravelAuth\\": "tests"
         }
-    },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://composer.cerpus.net"
-        },
-        {
-            "type": "composer",
-            "url": "https://composer-3rdparty.cerpus.net"
-        }
-    ]
+    }
 }
